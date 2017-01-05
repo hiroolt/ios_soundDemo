@@ -56,7 +56,7 @@
                         <outlet property="recordButton" destination="5pD-eV-X8F" id="Okq-QY-jzd"/>
                         <outlet property="recordingLabel" destination="IdG-8I-1uJ" id="Frs-Lx-JuH"/>
                         <outlet property="stopRecordingButton" destination="eR4-Jm-1b5" id="5Ob-DU-gKW"/>
-                        <segue destination="cE4-Hf-lgk" kind="show" identifier="stopRecording" id="Gif-gF-vBo"/>
+                        <segue destination="cE4-Hf-lgk" kind="show" identifier="stopRecording" id="CMH-dX-pqW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -87,7 +87,7 @@
                                                             <action selector="playSoundForButton:" destination="cE4-Hf-lgk" eventType="touchUpInside" id="GAF-uf-Qw9"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WeZ-52-lfR" userLabel="snailButton">
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WeZ-52-lfR" userLabel="snailButton">
                                                         <state key="normal" image="Slow"/>
                                                         <connections>
                                                             <action selector="playSoundForButton:" destination="cE4-Hf-lgk" eventType="touchUpInside" id="s7H-vT-uYe"/>
@@ -97,13 +97,13 @@
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="sLz-h8-s2K">
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4MR-rO-ntc" userLabel="chipmunkButton">
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4MR-rO-ntc" userLabel="chipmunkButton">
                                                         <state key="normal" image="HighPitch"/>
                                                         <connections>
                                                             <action selector="playSoundForButton:" destination="cE4-Hf-lgk" eventType="touchUpInside" id="3Tj-2y-lYF"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="asY-vD-1k9" userLabel="vaderButton">
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="asY-vD-1k9" userLabel="vaderButton">
                                                         <state key="normal" image="LowPitch"/>
                                                         <connections>
                                                             <action selector="playSoundForButton:" destination="cE4-Hf-lgk" eventType="touchUpInside" id="Lxc-a6-tbS"/>
@@ -113,13 +113,13 @@
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="4S0-Co-WEp">
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OLq-43-0TJ" userLabel="echoButton">
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OLq-43-0TJ" userLabel="echoButton">
                                                         <state key="normal" image="Echo"/>
                                                         <connections>
                                                             <action selector="playSoundForButton:" destination="cE4-Hf-lgk" eventType="touchUpInside" id="Ahc-43-WIm"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mqb-sQ-wWV" userLabel="reverbButton">
+                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mqb-sQ-wWV" userLabel="reverbButton">
                                                         <state key="normal" image="Reverb"/>
                                                         <connections>
                                                             <action selector="playSoundForButton:" destination="cE4-Hf-lgk" eventType="touchUpInside" id="VUL-zx-Nz2"/>
